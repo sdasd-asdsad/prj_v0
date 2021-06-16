@@ -1,0 +1,294 @@
+#-----------------------------------------------------------
+# Vivado v2018.3 (64-bit)
+# SW Build 2405991 on Thu Dec  6 23:38:27 MST 2018
+# IP Build 2404404 on Fri Dec  7 01:43:56 MST 2018
+# Start of session at: Tue Jun 15 17:24:41 2021
+# Process ID: 14000
+# Current directory: C:/Users/KHJ/Desktop/HSD/HSD_LAB/lab10.5
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent15860 C:\Users\KHJ\Desktop\HSD\HSD_LAB\lab10.5\lab10.3.xpr
+# Log file: C:/Users/KHJ/Desktop/HSD/HSD_LAB/lab10.5/vivado.log
+# Journal file: C:/Users/KHJ/Desktop/HSD/HSD_LAB/lab10.5\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project C:/Users/KHJ/Desktop/HSD/HSD_LAB/lab10.5/lab10.3.xpr
+update_compile_order -fileset sources_1
+ipx::edit_ip_in_project -upgrade true -name myip_v1_0_project -directory C:/Users/KHJ/Desktop/HSD/HSD_LAB/lab10.5/lab10.3.tmp/myip_v1_0_project c:/Users/KHJ/Desktop/HSD/HSD_LAB/lab10.5/lab10_ip_repo/myip_1.0/component.xml
+update_compile_order -fileset sources_1
+update_compile_order -fileset sources_1
+export_ip_user_files -of_objects  [get_files c:/Users/KHJ/Desktop/HSD/HSD_LAB/lab10.5/lab10_ip_repo/myip_1.0/src/my_pearray.v] -no_script -reset -force -quiet
+remove_files  c:/Users/KHJ/Desktop/HSD/HSD_LAB/lab10.5/lab10_ip_repo/myip_1.0/src/my_pearray.v
+ipx::merge_project_changes files [ipx::current_core]
+set_property core_revision 26 [ipx::current_core]
+ipx::update_source_project_archive -component [ipx::current_core]
+ipx::create_xgui_files [ipx::current_core]
+ipx::update_checksums [ipx::current_core]
+ipx::save_core [ipx::current_core]
+ipx::move_temp_component_back -component [ipx::current_core]
+close_project -delete
+update_ip_catalog -rebuild -repo_path c:/Users/KHJ/Desktop/HSD/HSD_LAB/lab10.5/lab10_ip_repo
+report_ip_status -name ip_status 
+upgrade_ip -vlnv user.org:user:myip:1.0 [get_ips  design_1_myip_0_0] -log ip_upgrade.log
+export_ip_user_files -of_objects [get_ips design_1_myip_0_0] -no_script -sync -force -quiet
+generate_target all [get_files  C:/Users/KHJ/Desktop/HSD/HSD_LAB/lab10.5/lab10.3.srcs/sources_1/bd/design_1/design_1.bd]
+export_ip_user_files -of_objects [get_files C:/Users/KHJ/Desktop/HSD/HSD_LAB/lab10.5/lab10.3.srcs/sources_1/bd/design_1/design_1.bd] -no_script -sync -force -quiet
+export_simulation -of_objects [get_files C:/Users/KHJ/Desktop/HSD/HSD_LAB/lab10.5/lab10.3.srcs/sources_1/bd/design_1/design_1.bd] -directory C:/Users/KHJ/Desktop/HSD/HSD_LAB/lab10.5/lab10.3.ip_user_files/sim_scripts -ip_user_files_dir C:/Users/KHJ/Desktop/HSD/HSD_LAB/lab10.5/lab10.3.ip_user_files -ipstatic_source_dir C:/Users/KHJ/Desktop/HSD/HSD_LAB/lab10.5/lab10.3.ip_user_files/ipstatic -lib_map_path [list {modelsim=C:/Users/KHJ/Desktop/HSD/HSD_LAB/lab10.5/lab10.3.cache/compile_simlib/modelsim} {questa=C:/Users/KHJ/Desktop/HSD/HSD_LAB/lab10.5/lab10.3.cache/compile_simlib/questa} {riviera=C:/Users/KHJ/Desktop/HSD/HSD_LAB/lab10.5/lab10.3.cache/compile_simlib/riviera} {activehdl=C:/Users/KHJ/Desktop/HSD/HSD_LAB/lab10.5/lab10.3.cache/compile_simlib/activehdl}] -use_ip_compiled_libs -force -quiet
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 12
+wait_on_run impl_1
+open_run synth_1 -name synth_1
+close_design
+ipx::edit_ip_in_project -upgrade true -name myip_v1_0_project -directory C:/Users/KHJ/Desktop/HSD/HSD_LAB/lab10.5/lab10.3.tmp/myip_v1_0_project c:/Users/KHJ/Desktop/HSD/HSD_LAB/lab10.5/lab10_ip_repo/myip_1.0/component.xml
+update_compile_order -fileset sources_1
+ipx::merge_project_changes files [ipx::current_core]
+set_property core_revision 27 [ipx::current_core]
+ipx::update_source_project_archive -component [ipx::current_core]
+ipx::create_xgui_files [ipx::current_core]
+ipx::update_checksums [ipx::current_core]
+ipx::save_core [ipx::current_core]
+ipx::move_temp_component_back -component [ipx::current_core]
+close_project -delete
+update_ip_catalog -rebuild -repo_path c:/Users/KHJ/Desktop/HSD/HSD_LAB/lab10.5/lab10_ip_repo
+upgrade_ip -vlnv user.org:user:myip:1.0 [get_ips  design_1_myip_0_0] -log ip_upgrade.log
+export_ip_user_files -of_objects [get_ips design_1_myip_0_0] -no_script -sync -force -quiet
+generate_target all [get_files  C:/Users/KHJ/Desktop/HSD/HSD_LAB/lab10.5/lab10.3.srcs/sources_1/bd/design_1/design_1.bd]
+export_ip_user_files -of_objects [get_files C:/Users/KHJ/Desktop/HSD/HSD_LAB/lab10.5/lab10.3.srcs/sources_1/bd/design_1/design_1.bd] -no_script -sync -force -quiet
+export_simulation -of_objects [get_files C:/Users/KHJ/Desktop/HSD/HSD_LAB/lab10.5/lab10.3.srcs/sources_1/bd/design_1/design_1.bd] -directory C:/Users/KHJ/Desktop/HSD/HSD_LAB/lab10.5/lab10.3.ip_user_files/sim_scripts -ip_user_files_dir C:/Users/KHJ/Desktop/HSD/HSD_LAB/lab10.5/lab10.3.ip_user_files -ipstatic_source_dir C:/Users/KHJ/Desktop/HSD/HSD_LAB/lab10.5/lab10.3.ip_user_files/ipstatic -lib_map_path [list {modelsim=C:/Users/KHJ/Desktop/HSD/HSD_LAB/lab10.5/lab10.3.cache/compile_simlib/modelsim} {questa=C:/Users/KHJ/Desktop/HSD/HSD_LAB/lab10.5/lab10.3.cache/compile_simlib/questa} {riviera=C:/Users/KHJ/Desktop/HSD/HSD_LAB/lab10.5/lab10.3.cache/compile_simlib/riviera} {activehdl=C:/Users/KHJ/Desktop/HSD/HSD_LAB/lab10.5/lab10.3.cache/compile_simlib/activehdl}] -use_ip_compiled_libs -force -quiet
+report_ip_status -name ip_status 
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 12
+wait_on_run impl_1
+ipx::edit_ip_in_project -upgrade true -name myip_v1_0_project -directory C:/Users/KHJ/Desktop/HSD/HSD_LAB/lab10.5/lab10.3.tmp/myip_v1_0_project c:/Users/KHJ/Desktop/HSD/HSD_LAB/lab10.5/lab10_ip_repo/myip_1.0/component.xml
+update_compile_order -fileset sources_1
+ipx::merge_project_changes files [ipx::current_core]
+set_property core_revision 28 [ipx::current_core]
+ipx::update_source_project_archive -component [ipx::current_core]
+ipx::create_xgui_files [ipx::current_core]
+ipx::update_checksums [ipx::current_core]
+ipx::save_core [ipx::current_core]
+set_property core_revision 29 [ipx::current_core]
+ipx::update_source_project_archive -component [ipx::current_core]
+ipx::create_xgui_files [ipx::current_core]
+ipx::update_checksums [ipx::current_core]
+ipx::save_core [ipx::current_core]
+ipx::move_temp_component_back -component [ipx::current_core]
+close_project -delete
+update_ip_catalog -rebuild -repo_path c:/Users/KHJ/Desktop/HSD/HSD_LAB/lab10.5/lab10_ip_repo
+report_ip_status -name ip_status 
+upgrade_ip -vlnv user.org:user:myip:1.0 [get_ips  design_1_myip_0_0] -log ip_upgrade.log
+export_ip_user_files -of_objects [get_ips design_1_myip_0_0] -no_script -sync -force -quiet
+generate_target all [get_files  C:/Users/KHJ/Desktop/HSD/HSD_LAB/lab10.5/lab10.3.srcs/sources_1/bd/design_1/design_1.bd]
+export_ip_user_files -of_objects [get_files C:/Users/KHJ/Desktop/HSD/HSD_LAB/lab10.5/lab10.3.srcs/sources_1/bd/design_1/design_1.bd] -no_script -sync -force -quiet
+export_simulation -of_objects [get_files C:/Users/KHJ/Desktop/HSD/HSD_LAB/lab10.5/lab10.3.srcs/sources_1/bd/design_1/design_1.bd] -directory C:/Users/KHJ/Desktop/HSD/HSD_LAB/lab10.5/lab10.3.ip_user_files/sim_scripts -ip_user_files_dir C:/Users/KHJ/Desktop/HSD/HSD_LAB/lab10.5/lab10.3.ip_user_files -ipstatic_source_dir C:/Users/KHJ/Desktop/HSD/HSD_LAB/lab10.5/lab10.3.ip_user_files/ipstatic -lib_map_path [list {modelsim=C:/Users/KHJ/Desktop/HSD/HSD_LAB/lab10.5/lab10.3.cache/compile_simlib/modelsim} {questa=C:/Users/KHJ/Desktop/HSD/HSD_LAB/lab10.5/lab10.3.cache/compile_simlib/questa} {riviera=C:/Users/KHJ/Desktop/HSD/HSD_LAB/lab10.5/lab10.3.cache/compile_simlib/riviera} {activehdl=C:/Users/KHJ/Desktop/HSD/HSD_LAB/lab10.5/lab10.3.cache/compile_simlib/activehdl}] -use_ip_compiled_libs -force -quiet
+report_ip_status -name ip_status 
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 12
+wait_on_run impl_1
+get_param place.sliceLegEffortLimit
+ipx::edit_ip_in_project -upgrade true -name myip_v1_0_project -directory C:/Users/KHJ/Desktop/HSD/HSD_LAB/lab10.5/lab10.3.tmp/myip_v1_0_project c:/Users/KHJ/Desktop/HSD/HSD_LAB/lab10.5/lab10_ip_repo/myip_1.0/component.xml
+update_compile_order -fileset sources_1
+ipx::merge_project_changes files [ipx::current_core]
+set_property core_revision 30 [ipx::current_core]
+ipx::update_source_project_archive -component [ipx::current_core]
+ipx::create_xgui_files [ipx::current_core]
+ipx::update_checksums [ipx::current_core]
+ipx::save_core [ipx::current_core]
+ipx::move_temp_component_back -component [ipx::current_core]
+close_project -delete
+update_ip_catalog -rebuild -repo_path c:/Users/KHJ/Desktop/HSD/HSD_LAB/lab10.5/lab10_ip_repo
+report_ip_status -name ip_status 
+upgrade_ip -vlnv user.org:user:myip:1.0 [get_ips  design_1_myip_0_0] -log ip_upgrade.log
+export_ip_user_files -of_objects [get_ips design_1_myip_0_0] -no_script -sync -force -quiet
+generate_target all [get_files  C:/Users/KHJ/Desktop/HSD/HSD_LAB/lab10.5/lab10.3.srcs/sources_1/bd/design_1/design_1.bd]
+export_ip_user_files -of_objects [get_files C:/Users/KHJ/Desktop/HSD/HSD_LAB/lab10.5/lab10.3.srcs/sources_1/bd/design_1/design_1.bd] -no_script -sync -force -quiet
+export_simulation -of_objects [get_files C:/Users/KHJ/Desktop/HSD/HSD_LAB/lab10.5/lab10.3.srcs/sources_1/bd/design_1/design_1.bd] -directory C:/Users/KHJ/Desktop/HSD/HSD_LAB/lab10.5/lab10.3.ip_user_files/sim_scripts -ip_user_files_dir C:/Users/KHJ/Desktop/HSD/HSD_LAB/lab10.5/lab10.3.ip_user_files -ipstatic_source_dir C:/Users/KHJ/Desktop/HSD/HSD_LAB/lab10.5/lab10.3.ip_user_files/ipstatic -lib_map_path [list {modelsim=C:/Users/KHJ/Desktop/HSD/HSD_LAB/lab10.5/lab10.3.cache/compile_simlib/modelsim} {questa=C:/Users/KHJ/Desktop/HSD/HSD_LAB/lab10.5/lab10.3.cache/compile_simlib/questa} {riviera=C:/Users/KHJ/Desktop/HSD/HSD_LAB/lab10.5/lab10.3.cache/compile_simlib/riviera} {activehdl=C:/Users/KHJ/Desktop/HSD/HSD_LAB/lab10.5/lab10.3.cache/compile_simlib/activehdl}] -use_ip_compiled_libs -force -quiet
+report_ip_status -name ip_status 
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 12
+wait_on_run impl_1
+reset_run impl_1
+ipx::edit_ip_in_project -upgrade true -name myip_v1_0_project -directory C:/Users/KHJ/Desktop/HSD/HSD_LAB/lab10.5/lab10.3.tmp/myip_v1_0_project c:/Users/KHJ/Desktop/HSD/HSD_LAB/lab10.5/lab10_ip_repo/myip_1.0/component.xml
+update_compile_order -fileset sources_1
+ipx::merge_project_changes files [ipx::current_core]
+set_property core_revision 31 [ipx::current_core]
+ipx::update_source_project_archive -component [ipx::current_core]
+ipx::create_xgui_files [ipx::current_core]
+ipx::update_checksums [ipx::current_core]
+ipx::save_core [ipx::current_core]
+ipx::move_temp_component_back -component [ipx::current_core]
+close_project -delete
+update_ip_catalog -rebuild -repo_path c:/Users/KHJ/Desktop/HSD/HSD_LAB/lab10.5/lab10_ip_repo
+report_ip_status -name ip_status 
+upgrade_ip -vlnv user.org:user:myip:1.0 [get_ips  design_1_myip_0_0] -log ip_upgrade.log
+export_ip_user_files -of_objects [get_ips design_1_myip_0_0] -no_script -sync -force -quiet
+generate_target all [get_files  C:/Users/KHJ/Desktop/HSD/HSD_LAB/lab10.5/lab10.3.srcs/sources_1/bd/design_1/design_1.bd]
+export_ip_user_files -of_objects [get_files C:/Users/KHJ/Desktop/HSD/HSD_LAB/lab10.5/lab10.3.srcs/sources_1/bd/design_1/design_1.bd] -no_script -sync -force -quiet
+export_simulation -of_objects [get_files C:/Users/KHJ/Desktop/HSD/HSD_LAB/lab10.5/lab10.3.srcs/sources_1/bd/design_1/design_1.bd] -directory C:/Users/KHJ/Desktop/HSD/HSD_LAB/lab10.5/lab10.3.ip_user_files/sim_scripts -ip_user_files_dir C:/Users/KHJ/Desktop/HSD/HSD_LAB/lab10.5/lab10.3.ip_user_files -ipstatic_source_dir C:/Users/KHJ/Desktop/HSD/HSD_LAB/lab10.5/lab10.3.ip_user_files/ipstatic -lib_map_path [list {modelsim=C:/Users/KHJ/Desktop/HSD/HSD_LAB/lab10.5/lab10.3.cache/compile_simlib/modelsim} {questa=C:/Users/KHJ/Desktop/HSD/HSD_LAB/lab10.5/lab10.3.cache/compile_simlib/questa} {riviera=C:/Users/KHJ/Desktop/HSD/HSD_LAB/lab10.5/lab10.3.cache/compile_simlib/riviera} {activehdl=C:/Users/KHJ/Desktop/HSD/HSD_LAB/lab10.5/lab10.3.cache/compile_simlib/activehdl}] -use_ip_compiled_libs -force -quiet
+report_ip_status -name ip_status 
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 12
+wait_on_run impl_1
+ipx::edit_ip_in_project -upgrade true -name myip_v1_0_project -directory C:/Users/KHJ/Desktop/HSD/HSD_LAB/lab10.5/lab10.3.tmp/myip_v1_0_project c:/Users/KHJ/Desktop/HSD/HSD_LAB/lab10.5/lab10_ip_repo/myip_1.0/component.xml
+update_compile_order -fileset sources_1
+current_project lab10.3
+current_project myip_v1_0_project
+ipx::merge_project_changes files [ipx::current_core]
+set_property core_revision 32 [ipx::current_core]
+ipx::update_source_project_archive -component [ipx::current_core]
+ipx::create_xgui_files [ipx::current_core]
+ipx::update_checksums [ipx::current_core]
+ipx::save_core [ipx::current_core]
+ipx::move_temp_component_back -component [ipx::current_core]
+close_project -delete
+update_ip_catalog -rebuild -repo_path c:/Users/KHJ/Desktop/HSD/HSD_LAB/lab10.5/lab10_ip_repo
+report_ip_status -name ip_status 
+upgrade_ip -vlnv user.org:user:myip:1.0 [get_ips  design_1_myip_0_0] -log ip_upgrade.log
+export_ip_user_files -of_objects [get_ips design_1_myip_0_0] -no_script -sync -force -quiet
+generate_target all [get_files  C:/Users/KHJ/Desktop/HSD/HSD_LAB/lab10.5/lab10.3.srcs/sources_1/bd/design_1/design_1.bd]
+export_ip_user_files -of_objects [get_files C:/Users/KHJ/Desktop/HSD/HSD_LAB/lab10.5/lab10.3.srcs/sources_1/bd/design_1/design_1.bd] -no_script -sync -force -quiet
+export_simulation -of_objects [get_files C:/Users/KHJ/Desktop/HSD/HSD_LAB/lab10.5/lab10.3.srcs/sources_1/bd/design_1/design_1.bd] -directory C:/Users/KHJ/Desktop/HSD/HSD_LAB/lab10.5/lab10.3.ip_user_files/sim_scripts -ip_user_files_dir C:/Users/KHJ/Desktop/HSD/HSD_LAB/lab10.5/lab10.3.ip_user_files -ipstatic_source_dir C:/Users/KHJ/Desktop/HSD/HSD_LAB/lab10.5/lab10.3.ip_user_files/ipstatic -lib_map_path [list {modelsim=C:/Users/KHJ/Desktop/HSD/HSD_LAB/lab10.5/lab10.3.cache/compile_simlib/modelsim} {questa=C:/Users/KHJ/Desktop/HSD/HSD_LAB/lab10.5/lab10.3.cache/compile_simlib/questa} {riviera=C:/Users/KHJ/Desktop/HSD/HSD_LAB/lab10.5/lab10.3.cache/compile_simlib/riviera} {activehdl=C:/Users/KHJ/Desktop/HSD/HSD_LAB/lab10.5/lab10.3.cache/compile_simlib/activehdl}] -use_ip_compiled_libs -force -quiet
+report_ip_status -name ip_status 
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 12
+wait_on_run impl_1
+get_param
+get_param place.sliceLegEffortLimit
+set_param place.sliceLegEffortLimit 10000
+areaOptimized_high
+areaOptimized_high directive
+set_property -name {STEPS.PLACE_DESIGN.ARGS.MORE OPTIONS} -value -no_fanout_opt -objects [get_runs impl_1]
+reset_run impl_1 -prev_step 
+launch_runs impl_1 -jobs 12
+wait_on_run impl_1
+reset_run impl_1
+launch_runs impl_1 -jobs 12
+wait_on_run impl_1
+reset_run impl_1
+reset_run synth_1
+launch_runs synth_1 -jobs 12
+wait_on_run synth_1
+launch_runs impl_1 -jobs 12
+wait_on_run impl_1
+ipx::edit_ip_in_project -upgrade true -name myip_v1_0_project -directory C:/Users/KHJ/Desktop/HSD/HSD_LAB/lab10.5/lab10.3.tmp/myip_v1_0_project c:/Users/KHJ/Desktop/HSD/HSD_LAB/lab10.5/lab10_ip_repo/myip_1.0/component.xml
+update_compile_order -fileset sources_1
+update_compile_order -fileset sources_1
+update_compile_order -fileset sources_1
+set_property -dict [list CONFIG.C_Mult_Usage {Full_Usage} CONFIG.C_Latency {19}] [get_ips floating_point_0]
+generate_target all [get_files  c:/Users/KHJ/Desktop/HSD/HSD_LAB/lab10.5/lab10_ip_repo/myip_1.0/src/floating_point_0_1/floating_point_0.xci]
+export_ip_user_files -of_objects [get_files c:/Users/KHJ/Desktop/HSD/HSD_LAB/lab10.5/lab10_ip_repo/myip_1.0/src/floating_point_0_1/floating_point_0.xci] -no_script -sync -force -quiet
+export_simulation -of_objects [get_files c:/Users/KHJ/Desktop/HSD/HSD_LAB/lab10.5/lab10_ip_repo/myip_1.0/src/floating_point_0_1/floating_point_0.xci] -directory c:/users/khj/desktop/hsd/hsd_lab/lab10.5/lab10.3.tmp/myip_v1_0_project/myip_v1_0_project.ip_user_files/sim_scripts -ip_user_files_dir c:/users/khj/desktop/hsd/hsd_lab/lab10.5/lab10.3.tmp/myip_v1_0_project/myip_v1_0_project.ip_user_files -ipstatic_source_dir c:/users/khj/desktop/hsd/hsd_lab/lab10.5/lab10.3.tmp/myip_v1_0_project/myip_v1_0_project.ip_user_files/ipstatic -lib_map_path [list {modelsim=c:/users/khj/desktop/hsd/hsd_lab/lab10.5/lab10.3.tmp/myip_v1_0_project/myip_v1_0_project.cache/compile_simlib/modelsim} {questa=c:/users/khj/desktop/hsd/hsd_lab/lab10.5/lab10.3.tmp/myip_v1_0_project/myip_v1_0_project.cache/compile_simlib/questa} {riviera=c:/users/khj/desktop/hsd/hsd_lab/lab10.5/lab10.3.tmp/myip_v1_0_project/myip_v1_0_project.cache/compile_simlib/riviera} {activehdl=c:/users/khj/desktop/hsd/hsd_lab/lab10.5/lab10.3.tmp/myip_v1_0_project/myip_v1_0_project.cache/compile_simlib/activehdl}] -use_ip_compiled_libs -force -quiet
+current_project lab10.3
+current_project myip_v1_0_project
+ipx::merge_project_changes files [ipx::current_core]
+set_property core_revision 33 [ipx::current_core]
+ipx::update_source_project_archive -component [ipx::current_core]
+ipx::create_xgui_files [ipx::current_core]
+ipx::update_checksums [ipx::current_core]
+ipx::save_core [ipx::current_core]
+ipx::move_temp_component_back -component [ipx::current_core]
+close_project -delete
+update_ip_catalog -rebuild -repo_path c:/Users/KHJ/Desktop/HSD/HSD_LAB/lab10.5/lab10_ip_repo
+ipx::edit_ip_in_project -upgrade true -name myip_v1_0_project -directory C:/Users/KHJ/Desktop/HSD/HSD_LAB/lab10.5/lab10.3.tmp/myip_v1_0_project c:/Users/KHJ/Desktop/HSD/HSD_LAB/lab10.5/lab10_ip_repo/myip_1.0/component.xml
+update_compile_order -fileset sources_1
+set_property core_revision 34 [ipx::current_core]
+ipx::update_source_project_archive -component [ipx::current_core]
+ipx::create_xgui_files [ipx::current_core]
+ipx::update_checksums [ipx::current_core]
+ipx::save_core [ipx::current_core]
+set_property core_revision 35 [ipx::current_core]
+ipx::update_source_project_archive -component [ipx::current_core]
+ipx::create_xgui_files [ipx::current_core]
+ipx::update_checksums [ipx::current_core]
+ipx::save_core [ipx::current_core]
+ipx::move_temp_component_back -component [ipx::current_core]
+close_project -delete
+update_ip_catalog -rebuild -repo_path c:/Users/KHJ/Desktop/HSD/HSD_LAB/lab10.5/lab10_ip_repo
+report_ip_status -name ip_status 
+upgrade_ip -vlnv user.org:user:myip:1.0 [get_ips  design_1_myip_0_0] -log ip_upgrade.log
+export_ip_user_files -of_objects [get_ips design_1_myip_0_0] -no_script -sync -force -quiet
+generate_target all [get_files  C:/Users/KHJ/Desktop/HSD/HSD_LAB/lab10.5/lab10.3.srcs/sources_1/bd/design_1/design_1.bd]
+export_ip_user_files -of_objects [get_files C:/Users/KHJ/Desktop/HSD/HSD_LAB/lab10.5/lab10.3.srcs/sources_1/bd/design_1/design_1.bd] -no_script -sync -force -quiet
+export_simulation -of_objects [get_files C:/Users/KHJ/Desktop/HSD/HSD_LAB/lab10.5/lab10.3.srcs/sources_1/bd/design_1/design_1.bd] -directory C:/Users/KHJ/Desktop/HSD/HSD_LAB/lab10.5/lab10.3.ip_user_files/sim_scripts -ip_user_files_dir C:/Users/KHJ/Desktop/HSD/HSD_LAB/lab10.5/lab10.3.ip_user_files -ipstatic_source_dir C:/Users/KHJ/Desktop/HSD/HSD_LAB/lab10.5/lab10.3.ip_user_files/ipstatic -lib_map_path [list {modelsim=C:/Users/KHJ/Desktop/HSD/HSD_LAB/lab10.5/lab10.3.cache/compile_simlib/modelsim} {questa=C:/Users/KHJ/Desktop/HSD/HSD_LAB/lab10.5/lab10.3.cache/compile_simlib/questa} {riviera=C:/Users/KHJ/Desktop/HSD/HSD_LAB/lab10.5/lab10.3.cache/compile_simlib/riviera} {activehdl=C:/Users/KHJ/Desktop/HSD/HSD_LAB/lab10.5/lab10.3.cache/compile_simlib/activehdl}] -use_ip_compiled_libs -force -quiet
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 12
+wait_on_run impl_1
+report_ip_status -name ip_status 
+ipx::edit_ip_in_project -upgrade true -name myip_v1_0_project -directory C:/Users/KHJ/Desktop/HSD/HSD_LAB/lab10.5/lab10.3.tmp/myip_v1_0_project c:/Users/KHJ/Desktop/HSD/HSD_LAB/lab10.5/lab10_ip_repo/myip_1.0/component.xml
+update_compile_order -fileset sources_1
+current_project lab10.3
+current_project myip_v1_0_project
+set_property -dict [list CONFIG.C_Mult_Usage {Medium_Usage} CONFIG.C_Latency {16}] [get_ips floating_point_0]
+generate_target all [get_files  c:/Users/KHJ/Desktop/HSD/HSD_LAB/lab10.5/lab10_ip_repo/myip_1.0/src/floating_point_0_1/floating_point_0.xci]
+export_ip_user_files -of_objects [get_files c:/Users/KHJ/Desktop/HSD/HSD_LAB/lab10.5/lab10_ip_repo/myip_1.0/src/floating_point_0_1/floating_point_0.xci] -no_script -sync -force -quiet
+export_simulation -of_objects [get_files c:/Users/KHJ/Desktop/HSD/HSD_LAB/lab10.5/lab10_ip_repo/myip_1.0/src/floating_point_0_1/floating_point_0.xci] -directory c:/users/khj/desktop/hsd/hsd_lab/lab10.5/lab10.3.tmp/myip_v1_0_project/myip_v1_0_project.ip_user_files/sim_scripts -ip_user_files_dir c:/users/khj/desktop/hsd/hsd_lab/lab10.5/lab10.3.tmp/myip_v1_0_project/myip_v1_0_project.ip_user_files -ipstatic_source_dir c:/users/khj/desktop/hsd/hsd_lab/lab10.5/lab10.3.tmp/myip_v1_0_project/myip_v1_0_project.ip_user_files/ipstatic -lib_map_path [list {modelsim=c:/users/khj/desktop/hsd/hsd_lab/lab10.5/lab10.3.tmp/myip_v1_0_project/myip_v1_0_project.cache/compile_simlib/modelsim} {questa=c:/users/khj/desktop/hsd/hsd_lab/lab10.5/lab10.3.tmp/myip_v1_0_project/myip_v1_0_project.cache/compile_simlib/questa} {riviera=c:/users/khj/desktop/hsd/hsd_lab/lab10.5/lab10.3.tmp/myip_v1_0_project/myip_v1_0_project.cache/compile_simlib/riviera} {activehdl=c:/users/khj/desktop/hsd/hsd_lab/lab10.5/lab10.3.tmp/myip_v1_0_project/myip_v1_0_project.cache/compile_simlib/activehdl}] -use_ip_compiled_libs -force -quiet
+current_project lab10.3
+current_project myip_v1_0_project
+ipx::merge_project_changes files [ipx::current_core]
+set_property core_revision 36 [ipx::current_core]
+ipx::update_source_project_archive -component [ipx::current_core]
+ipx::create_xgui_files [ipx::current_core]
+ipx::update_checksums [ipx::current_core]
+ipx::save_core [ipx::current_core]
+ipx::move_temp_component_back -component [ipx::current_core]
+close_project -delete
+update_ip_catalog -rebuild -repo_path c:/Users/KHJ/Desktop/HSD/HSD_LAB/lab10.5/lab10_ip_repo
+report_ip_status -name ip_status 
+upgrade_ip -vlnv user.org:user:myip:1.0 [get_ips  design_1_myip_0_0] -log ip_upgrade.log
+export_ip_user_files -of_objects [get_ips design_1_myip_0_0] -no_script -sync -force -quiet
+generate_target all [get_files  C:/Users/KHJ/Desktop/HSD/HSD_LAB/lab10.5/lab10.3.srcs/sources_1/bd/design_1/design_1.bd]
+export_ip_user_files -of_objects [get_files C:/Users/KHJ/Desktop/HSD/HSD_LAB/lab10.5/lab10.3.srcs/sources_1/bd/design_1/design_1.bd] -no_script -sync -force -quiet
+export_simulation -of_objects [get_files C:/Users/KHJ/Desktop/HSD/HSD_LAB/lab10.5/lab10.3.srcs/sources_1/bd/design_1/design_1.bd] -directory C:/Users/KHJ/Desktop/HSD/HSD_LAB/lab10.5/lab10.3.ip_user_files/sim_scripts -ip_user_files_dir C:/Users/KHJ/Desktop/HSD/HSD_LAB/lab10.5/lab10.3.ip_user_files -ipstatic_source_dir C:/Users/KHJ/Desktop/HSD/HSD_LAB/lab10.5/lab10.3.ip_user_files/ipstatic -lib_map_path [list {modelsim=C:/Users/KHJ/Desktop/HSD/HSD_LAB/lab10.5/lab10.3.cache/compile_simlib/modelsim} {questa=C:/Users/KHJ/Desktop/HSD/HSD_LAB/lab10.5/lab10.3.cache/compile_simlib/questa} {riviera=C:/Users/KHJ/Desktop/HSD/HSD_LAB/lab10.5/lab10.3.cache/compile_simlib/riviera} {activehdl=C:/Users/KHJ/Desktop/HSD/HSD_LAB/lab10.5/lab10.3.cache/compile_simlib/activehdl}] -use_ip_compiled_libs -force -quiet
+reset_run synth_1
+launch_runs impl_1 -jobs 12
+wait_on_run impl_1
+report_ip_status -name ip_status 
+ipx::edit_ip_in_project -upgrade true -name myip_v1_0_project -directory C:/Users/KHJ/Desktop/HSD/HSD_LAB/lab10.5/lab10.3.tmp/myip_v1_0_project c:/Users/KHJ/Desktop/HSD/HSD_LAB/lab10.5/lab10_ip_repo/myip_1.0/component.xml
+update_compile_order -fileset sources_1
+current_project lab10.3
+current_project myip_v1_0_project
+ipx::merge_project_changes files [ipx::current_core]
+set_property core_revision 37 [ipx::current_core]
+ipx::update_source_project_archive -component [ipx::current_core]
+ipx::create_xgui_files [ipx::current_core]
+ipx::update_checksums [ipx::current_core]
+ipx::save_core [ipx::current_core]
+ipx::move_temp_component_back -component [ipx::current_core]
+close_project -delete
+update_ip_catalog -rebuild -repo_path c:/Users/KHJ/Desktop/HSD/HSD_LAB/lab10.5/lab10_ip_repo
+report_ip_status -name ip_status 
+upgrade_ip -vlnv user.org:user:myip:1.0 [get_ips  design_1_myip_0_0] -log ip_upgrade.log
+export_ip_user_files -of_objects [get_ips design_1_myip_0_0] -no_script -sync -force -quiet
+generate_target all [get_files  C:/Users/KHJ/Desktop/HSD/HSD_LAB/lab10.5/lab10.3.srcs/sources_1/bd/design_1/design_1.bd]
+export_ip_user_files -of_objects [get_files C:/Users/KHJ/Desktop/HSD/HSD_LAB/lab10.5/lab10.3.srcs/sources_1/bd/design_1/design_1.bd] -no_script -sync -force -quiet
+export_simulation -of_objects [get_files C:/Users/KHJ/Desktop/HSD/HSD_LAB/lab10.5/lab10.3.srcs/sources_1/bd/design_1/design_1.bd] -directory C:/Users/KHJ/Desktop/HSD/HSD_LAB/lab10.5/lab10.3.ip_user_files/sim_scripts -ip_user_files_dir C:/Users/KHJ/Desktop/HSD/HSD_LAB/lab10.5/lab10.3.ip_user_files -ipstatic_source_dir C:/Users/KHJ/Desktop/HSD/HSD_LAB/lab10.5/lab10.3.ip_user_files/ipstatic -lib_map_path [list {modelsim=C:/Users/KHJ/Desktop/HSD/HSD_LAB/lab10.5/lab10.3.cache/compile_simlib/modelsim} {questa=C:/Users/KHJ/Desktop/HSD/HSD_LAB/lab10.5/lab10.3.cache/compile_simlib/questa} {riviera=C:/Users/KHJ/Desktop/HSD/HSD_LAB/lab10.5/lab10.3.cache/compile_simlib/riviera} {activehdl=C:/Users/KHJ/Desktop/HSD/HSD_LAB/lab10.5/lab10.3.cache/compile_simlib/activehdl}] -use_ip_compiled_libs -force -quiet
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 12
+wait_on_run impl_1
+report_ip_status -name ip_status 
+reset_run impl_1
+ipx::edit_ip_in_project -upgrade true -name myip_v1_0_project -directory C:/Users/KHJ/Desktop/HSD/HSD_LAB/lab10.5/lab10.3.tmp/myip_v1_0_project c:/Users/KHJ/Desktop/HSD/HSD_LAB/lab10.5/lab10_ip_repo/myip_1.0/component.xml
+update_compile_order -fileset sources_1
+update_compile_order -fileset sources_1
+ipx::merge_project_changes files [ipx::current_core]
+set_property core_revision 38 [ipx::current_core]
+ipx::update_source_project_archive -component [ipx::current_core]
+ipx::create_xgui_files [ipx::current_core]
+ipx::update_checksums [ipx::current_core]
+ipx::save_core [ipx::current_core]
+ipx::move_temp_component_back -component [ipx::current_core]
+close_project -delete
+update_ip_catalog -rebuild -repo_path c:/Users/KHJ/Desktop/HSD/HSD_LAB/lab10.5/lab10_ip_repo
+report_ip_status -name ip_status 
+upgrade_ip -vlnv user.org:user:myip:1.0 [get_ips  design_1_myip_0_0] -log ip_upgrade.log
+export_ip_user_files -of_objects [get_ips design_1_myip_0_0] -no_script -sync -force -quiet
+generate_target all [get_files  C:/Users/KHJ/Desktop/HSD/HSD_LAB/lab10.5/lab10.3.srcs/sources_1/bd/design_1/design_1.bd]
+export_ip_user_files -of_objects [get_files C:/Users/KHJ/Desktop/HSD/HSD_LAB/lab10.5/lab10.3.srcs/sources_1/bd/design_1/design_1.bd] -no_script -sync -force -quiet
+export_simulation -of_objects [get_files C:/Users/KHJ/Desktop/HSD/HSD_LAB/lab10.5/lab10.3.srcs/sources_1/bd/design_1/design_1.bd] -directory C:/Users/KHJ/Desktop/HSD/HSD_LAB/lab10.5/lab10.3.ip_user_files/sim_scripts -ip_user_files_dir C:/Users/KHJ/Desktop/HSD/HSD_LAB/lab10.5/lab10.3.ip_user_files -ipstatic_source_dir C:/Users/KHJ/Desktop/HSD/HSD_LAB/lab10.5/lab10.3.ip_user_files/ipstatic -lib_map_path [list {modelsim=C:/Users/KHJ/Desktop/HSD/HSD_LAB/lab10.5/lab10.3.cache/compile_simlib/modelsim} {questa=C:/Users/KHJ/Desktop/HSD/HSD_LAB/lab10.5/lab10.3.cache/compile_simlib/questa} {riviera=C:/Users/KHJ/Desktop/HSD/HSD_LAB/lab10.5/lab10.3.cache/compile_simlib/riviera} {activehdl=C:/Users/KHJ/Desktop/HSD/HSD_LAB/lab10.5/lab10.3.cache/compile_simlib/activehdl}] -use_ip_compiled_libs -force -quiet
+report_ip_status -name ip_status 
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 12
+wait_on_run impl_1
+open_run impl_1
+close_design
+ipx::edit_ip_in_project -upgrade true -name myip_v1_0_project -directory C:/Users/KHJ/Desktop/HSD/HSD_LAB/lab10.5/lab10.3.tmp/myip_v1_0_project c:/Users/KHJ/Desktop/HSD/HSD_LAB/lab10.5/lab10_ip_repo/myip_1.0/component.xml
+update_compile_order -fileset sources_1
+ipx::merge_project_changes files [ipx::current_core]
